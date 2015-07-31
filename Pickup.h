@@ -22,15 +22,15 @@ public:
 
 
 	// True when the pickup is able to be picked up, false if something deactivates the pickup
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Catergory = "Pickup") // added on a variable
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Pickup") // added on a variable
 	bool bIsActive;
 
 	// Simple collision primitive to use as the root component
-	UPROPERTY(VisableDefaultsOnly, BlueprintReadOnly, Catergory = "Pickup")  // added on a component
+	UPROPERTY(VisibleDefaultsOnly, BlueprintReadOnly, Category = "Pickup")  // added on a component
 	class USphereComponent* BaseCollisionComponent; 
 
 	// StaticMeshComponent to represent the pickup in the level
-	UPROPERTY(VisableDefaultsOnly, BlueprintReadOnly, Catergory = "Pickup")
+	UPROPERTY(VisbleDefaultsOnly, BlueprintReadOnly, Category = "Pickup")
 	class UStaticMeshComponent* PickupMesh; 
 
 	// Function to call when the Pickup is collected
