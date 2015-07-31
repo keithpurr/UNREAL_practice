@@ -29,9 +29,6 @@ APickup::APickup(const FObjectInitializer &objectInitializer) :Super(objectIniti
 
 }
 
-void GetTesting(){
-	
-}
 
 void APickup::OnPickedUp_Impelentation()
 {
